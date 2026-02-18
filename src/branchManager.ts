@@ -19,8 +19,8 @@ const SUMMARY_CACHE_MAX = 100;
 
 import * as _ from 'lodash';
 import graphlibPkg from '@dagrejs/graphlib';
-import type { Graph as GraphType } from '@dagrejs/graphlib';
 const { Graph, alg } = graphlibPkg as typeof import('@dagrejs/graphlib');
+type GraphType = InstanceType<typeof Graph>;
 import { kmeans } from 'ml-kmeans';
 
 // Cosine similarity for two vectors

@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import { ThoughtBranch, ThoughtData, Insight, CrossReference, InsightType, CrossRefType, BranchingThoughtInput, ThoughtLink, CodeSnippet, TaskItem, ReviewSuggestion, VisualizationData, VisualizationNode, VisualizationEdge, ExternalSearchResult, Profile, VisualizationOptions } from './types.js';
-import { pipeline, FeatureExtractionPipeline } from '@xenova/transformers';
+import { pipeline, FeatureExtractionPipeline } from '@huggingface/transformers';
 import { LRUCache } from 'lru-cache';
 
 /**
